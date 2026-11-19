@@ -1,0 +1,56 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "yourname.quick-decorator",
+	"name": "Quick Decorator",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Adds a Deco button to the editor that scatters decoration around your selected objects.",
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=1.0.0",
+			"importance": "required"
+		}
+	],
+	"settings": {
+		"count": {
+			"type": "int",
+			"name": "Pieces per object",
+			"default": 8,
+			"min": 1,
+			"max": 60
+		},
+		"radius": {
+			"type": "float",
+			"name": "Scatter radius",
+			"default": 60.0,
+			"min": 10.0,
+			"max": 300.0
+		},
+		"min-scale": {
+			"type": "float",
+			"name": "Min scale",
+			"default": 0.3,
+			"min": 0.1,
+			"max": 2.0
+		},
+		"max-scale": {
+			"type": "float",
+			"name": "Max scale",
+			"default": 0.9,
+			"min": 0.1,
+			"max": 3.0
+		},
+		"random-rotation": {
+			"type": "bool",
+			"name": "Random rotation",
+			"default": true
+		}
+	}
+}
